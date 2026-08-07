@@ -5,3 +5,5 @@ if add>30:
     print("you are elegibal to voting")
 else:
     print("ypu are not elegibal to voting")
+
+

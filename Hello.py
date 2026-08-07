@@ -25,3 +25,4 @@ if add>30:
 else:
     print("ypu are not elegibal to voting")
 
+
