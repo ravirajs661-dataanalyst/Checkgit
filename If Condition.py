@@ -21,20 +21,33 @@
 
 # wap to check number is positive, negative or Zero
 
-num=float(input("enter the number"))
-if num>0:
-    print("positive number")
-elif num<0:
-    print("negative number")
-else:
-    print("Zero")
+# num=float(input("enter the number"))
+# if num>0:
+#     print("positive number")
+# elif num<0:
+#     print("negative number")
+# else:
+#     print("Zero")
 
 # wap to check a number and display the even or odd
 
-num=int(input("enter the number :"))
-if num % 2==0:
-    print("Even Number")
+# num=int(input("enter the number :"))
+# if num % 2==0:
+#     print("Even Number")
+# else:
+#     print("Odd number")
+
+#nestd if condition 
+
+age= int(input("enter your age"))
+citizen_score=int(input("inter your citizen score"))
+if age>18:
+    if citizen_score>40:
+        print("you are eligibal to vote")
+    else:
+        print("increase your score you can vote")
 else:
-    print("Odd number")
+    print("you are just a kid")
+
 
 
