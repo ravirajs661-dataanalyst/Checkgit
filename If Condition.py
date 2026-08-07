@@ -41,13 +41,28 @@
 
 age= int(input("enter your age"))
 citizen_score=int(input("inter your citizen score"))
+national_score=int(input("enter your national score:"))
+# if age>18:
+#     if citizen_score>40:
+#         print("you are eligibal to vote")
+#     else:
+#         print("increase your score you can vote")
+# else:
+#     print("you are just a kid")
+
 if age>18:
     if citizen_score>40:
-        print("you are eligibal to vote")
+        if national_score>60:
+            print("you are eligible to vote")
+        else:
+            print("you are not eligible to vote. increase your national score")
     else:
-        print("increase your score you can vote")
+        print("you are not eligible to vote. increase your citizen score")
 else:
-    print("you are just a kid")
+    if age>=16:
+        print("wiat for 1-2 years")
+    else:
+        print("you are just a kid bro")
 
 
 
