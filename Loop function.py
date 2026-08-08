@@ -66,11 +66,69 @@
 #     i=i+1
 
 # print the sum of numbers from 1 to 100 to using a loop 
-i = 1
-sum = 0
+# i = 1
+# sum = 0
 
-while i <= 100:
-    sum = sum + i
-    i = i + 1
+# while i <= 100:
+#     sum = sum + i
+#     i = i + 1
 
-print("Sum =", sum)
+# print("Sum =", sum)
+
+#wap to display the factor of n using for loop
+# n me koi bhi number de to o num 1 ke alawa or kis number se katne par pura o aayega
+# n=int(input("enter a number"))
+# for i in range(1,n+1):
+#     if n%i==0:
+#         print(i)
+
+#wap to display the factor of n using while loop
+# n=int(input("enter a number"))
+# i=1
+# while i<=n:
+#     if n%i==0:
+#         print(i)
+#     i=i+1
+
+#wap to display the table off n upto 10 time
+# n=int(input("enter a number"))
+# for i in range(1,11):
+#     print(n*i)
+
+# i=1
+# while i<=10:
+#     print(n*i)
+#     i=i+1
+
+# *****
+# *****
+# *****
+# ***** this code will be print
+# for i in range(4):
+#     for j in range(5):
+#         print("*",end='')
+#     print("\n")
+
+
+# for i in range(1,6):
+#     for j in range(i):
+#         print("*",end='')
+#     print("\n")
+
+for i in range(1,7):
+    for j in range(i):
+        print("A",end='')
+    print("\n")
+
+#  *****
+#   ****
+#    ***
+#     **
+#      * this code will be print
+# for i in range(5):
+#     for j in range(i):
+#         print(" ",end="")
+#     for j in range(5-i):
+#         print("*",end="")
+#     print()
+
