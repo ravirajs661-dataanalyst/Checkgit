@@ -36,6 +36,7 @@ i=1
 #     fact= fact*i
 # print(fact)
 
+# Take a number from the user and reverse it using a while loop.
 n = 12345
 reverse = 0
 
