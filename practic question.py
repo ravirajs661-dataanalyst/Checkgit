@@ -57,3 +57,26 @@ reverse = 0
 # for i in range(1,5):
 #     for j in range(1,4):
 #         print(j)
+
+# Print numbers from 1 to 100. Print Fizz if divisible by 3, Buzz if divisible by 5, FizzBuzz if divisible by both, otherwise print the number
+# for i in range(1,51):
+#     if i%3==0  and i%5==0:
+#         print("FizzBuzz")
+#     elif i%3==0:
+#         print("Fizz")
+#     elif i%5==0:
+#         print("Buzz")
+#     else:
+#         print(i)
+
+# Find the sum and average of a list without using sum() or statistics.mean().Uses: Lists, Loop, Variables.
+mark=[85,75,40,31,28,38,57]
+total=0
+for i in mark:
+    total=total+i
+print(total)
+
+avg=total/len(mark)
+print(avg)
+
+# print(sum(mark))      #1st method
