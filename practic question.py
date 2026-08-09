@@ -40,10 +40,20 @@ i=1
 n = 12345
 reverse = 0
 
-while n > 0:
-    digit = n % 10
-    reverse = reverse * 10 + digit
-    n = n // 10
-print(reverse)
+# while n > 0:
+#     digit = n % 10
+#     reverse = reverse * 10 + digit
+#     n = n // 10
+# print(reverse)
 
-   
+# n=int(input("enter a number"))
+# # for i in range(1,11):
+# #     print(n*i)
+
+# while i<=10:
+#     print(n*i)
+#     i=i+1
+
+# for i in range(1,5):
+#     for j in range(1,4):
+#         print(j)
