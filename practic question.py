@@ -72,11 +72,92 @@ reverse = 0
 # Find the sum and average of a list without using sum() or statistics.mean().Uses: Lists, Loop, Variables.
 mark=[85,75,40,31,28,38,57]
 total=0
-for i in mark:
-    total=total+i
-print(total)
+# for i in mark:
+#     total=total+i
+# print(total)
 
-avg=total/len(mark)
-print(avg)
+# avg=total/len(mark)
+# print(avg)
 
 # print(sum(mark))      #1st method
+
+# Print numbers from 1 to 10.
+# for i in range(1,11):
+#     print(i)
+
+# Print numbers from 10 to 1.
+# for i in range(10,0,-1):
+#     print(i)
+
+i=1
+# while i<=10:
+#     print(i)
+#     i=i+1
+
+a=10
+# while a>=1:
+#     print(a)
+#     a=a-1
+
+#print all even number 1 to 50.
+n=1
+# while n<=50:
+#     if n%2==0:
+#         print(n)
+#     n=n+1
+
+#print all odd number 1 to 50.
+# while n<=50:
+#    print(n)
+#    n=n+2
+
+# Print the multiplication table of a given number.
+# n=int(input("enter a number"))
+# i=1
+# while i<=10:
+#    print(n*i)
+#    i=i+1
+
+# Find the sum of numbers from 1 to 100.
+i=1
+total=0
+# while i<=100:
+#     total=total+i
+#     i=i+1
+# print(total)
+
+# Find the sum of all even numbers from 1 to 100.
+i = 1
+total = 0
+# while i<=100:
+#     if i%2==0:
+#         total=total+i
+#     i=i+1
+# print(total)
+
+# Print the square of numbers from 1 to 10.
+# for i in range(1,11):
+#     print(i**2)
+
+# Print the cube of numbers from 1 to 10.
+# for i in range(1,11):
+#     print(i**3)
+
+# Print each character of a given string.
+name = "raviraj"
+i=0
+# while i <len(name):
+#     print(name[i])
+#     i=i+1
+
+# duplicate value kaise find kare.----Most Important Question----
+items = [1,2,2,3,4,4,4,5,9,9]
+dup=[]
+for i in items:
+    count=0
+    for j in items:
+        if i==j:
+            count=count+1
+    if count>1 and i not in dup:
+        dup.append(i)
+print(dup)
