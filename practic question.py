@@ -161,3 +161,10 @@ dup=[]
 #     if count>1 and i not in dup:
 #         dup.append(i)
 # print(dup)
+
+students=("Ravi",26,"Bca",8.5)
+name, age, course, gpa=students
+print(name, age, course, gpa)
+
+numbers= [1,2,3,4,5,6,7]
+print(numbers)
