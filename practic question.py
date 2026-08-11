@@ -153,11 +153,11 @@ i=0
 # duplicate value kaise find kare.----Most Important Question----
 items = [1,2,2,3,4,4,4,5,9,9]
 dup=[]
-for i in items:
-    count=0
-    for j in items:
-        if i==j:
-            count=count+1
-    if count>1 and i not in dup:
-        dup.append(i)
-print(dup)
+# for i in items:
+#     count=0
+#     for j in items:
+#         if i==j:
+#             count=count+1
+#     if count>1 and i not in dup:
+#         dup.append(i)
+# print(dup)
