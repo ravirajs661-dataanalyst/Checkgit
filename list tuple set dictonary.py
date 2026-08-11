@@ -46,14 +46,26 @@ a={1,2,3,4}
 b={3,4,5,6}
 
 #union sabhi value ko print karta hai
-print(a|b)
+# print(a|b)
 
 #intersection --dono me common value print karta hai
-print(a&b)
+# print(a&b)
 
 #difference -- a me value ho but b me nhi ho
-print(a - b)
+# print(a - b)
 
 #symmetric -- dono me jo common nahi ho
-print(a^b)
+# print(a^b)
 
+#               ----------Dictonary--------
+
+d1={
+    "name":"RaviRaj",
+    "age": 26,
+    "mark": [87,75,85],
+    "i am good": True,
+    2: "i am two",
+    (5,7): "i am tuple",
+}
+
+print(d1)
