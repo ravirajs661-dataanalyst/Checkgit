@@ -370,4 +370,15 @@
 #         largest=i
 # print(largest)
 
+# User se ek string lo aur count karo usme kitne vowels hain.
+# n = str(input("Enter a Text: "))
+# count=0
+
+# for i in n:
+#     if i in "aeiouAEIOU":
+#         count=count+1
+# print(count)
+
+# User se string lo aur check karo ki woh palindrome hai ya nahi.
+
 
