@@ -79,7 +79,54 @@
 # student(name="Ravi", age=26, city="Patna")
 
 # Create a function employee(**kwargs) that prints the employee's name and salary.
-def employees(**employee):
-    print(name, salary=25000)
+# def employees(**employee):
+#     name=employee.get("name")
+#     salary=employee.get("salary",25000)
+#     print(name,salary)
+
+# employees(name="Ravi")
+
+# Create a function product(**kwargs) that uses these default values:
+# def product(**kwargs):
+#     name=kwargs.get("name","unknown")
+#     price=kwargs.get("price",0)
+#     quantity=kwargs.get("quantity",1)
+#     print(name, price, quantity)
+
+# product(name="Laptop", price="50000")
+
+# def student(*subject, **details):
+#     print("subject",subject)
+#     print("details",details)
+
+# student(
+#     "python",
+#     "sql",
+#     "Excel",
+#     name="Ravi",
+#     city="Patna"
+# )
+
+# Create a function shopping(*items, **customer). It should print:All shopping items, Customer name,Customer city
+def shopping(*items, **customer):
+    print("items",items)
+    print("customer",customer)
+
+shopping(
+    "laptop",
+    "keybord",
+    "Mouse",
+    name="Ravi",
+    city="Patna"
+)
+
+
+
+
+
+
+
+
+
 
 
