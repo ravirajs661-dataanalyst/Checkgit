@@ -108,25 +108,86 @@
 # )
 
 # Create a function shopping(*items, **customer). It should print:All shopping items, Customer name,Customer city
-def shopping(*items, **customer):
-    print("items",items)
-    print("customer",customer)
+# def shopping(*items, **customer):
+#     print("items",items)
+#     print("customer",customer)
 
-shopping(
-    "laptop",
-    "keybord",
-    "Mouse",
-    name="Ravi",
-    city="Patna"
+# shopping(
+#     "laptop",
+#     "keybord",
+#     "Mouse",
+#     name="Ravi",
+#     city="Patna"
+# )
+
+# Create a function calculate(*numbers, **options).
+# def calculation(*number,**options):
+#     operation =options.get("operation","sum")
+#     if operation=="sum":
+#         print(sum(number))
+#     elif operation=="max":
+#         print(max(number))
+#     else:
+#         print("invalid operation")
+
+# calculation(10,20,30,operation="max")
+
+# Create a function that accepts any number of numbers using *args and returns their total.
+# def calculation(*number):
+#     total=0
+#     for i in number:
+#         total=total+i
+#     print(total)
+
+# calculation(13,25,15,38)
+
+# Create a function using *args that finds and returns the largest number.
+# def max_number(*number):
+#     print(max(number))
+
+# max_number(45,86,84,74)
+
+# Create a function using **kwargs that prints all student details passed as keyword arguments.
+# def students(**details):
+#     name=details.get("name")
+#     city=details.get("city")
+#     course=details.get("course")
+
+#     print(f'name="{name}"')
+#     print(f'city="{city}"')
+#     print(f'course="{course}"')
+
+# students(
+#     name="RaviRaj", 
+#     city="patna", 
+#     course="Python, SQL, Excel"
+# )
+
+# Create a function that accepts multiple numbers using *args and student information using **kwargs.
+def students(*subject,**details):
+    print("subject", subject)
+    print("details",details)
+
+students(
+    "Python", 
+    "Sql" 
+    "Excel",
+    name="Raviraj",
+    city="patna",
+    profession="Data Analyst"
 )
 
+# *args + **kwargs – Order Details
+def order(*prices,**customer):
+    total=sum(prices)
+    print("Total_price:",total)
+    print("customer information:",)
+    for key, value in customer.items():
+        print(f'{key}="{value}"')
 
-
-
-
-
-
-
-
-
-
+order(
+    500,300,200,
+    name="Raviraj",
+    city="patna",
+    Mobille=7079399892
+)
