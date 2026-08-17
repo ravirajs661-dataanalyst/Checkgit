@@ -379,6 +379,60 @@
 #         count=count+1
 # print(count)
 
-# User se string lo aur check karo ki woh palindrome hai ya nahi.
+#               ----- Lambda, Map, Filter -------
+
+# Lambda function se kisi number ka square nikalo.
+# square=lambda n:n**2
+# print(square(4))
+
+# Lambda function se do numbers me se largest number find karo.
+# largest= lambda a,b: a if a>b else b 
+# print(largest(15,18))
+
+# Lambda function se check karo ki number even hai ya nahi.
+# check= lambda n: True if n%2==0 else False 
+
+# print(check(6))
+
+# Lambda function se kisi string ki length find karo.
+# result=lambda n:len(n)
+# print(result("RaviRaj"))
+
+# map() + lambda ka use karke list ke har number ko double karo.
+# number=[2,3,4,5,6]
+# double=map(lambda n:n*2, number)
+# print(list(double))
+
+# map() ka use karke har number ka square nikalo.
+# number=[2,3,4,5]
+# square=map(lambda n : n**2, number)
+# print(list(square))
+
+# List ke har number me 10 add karo using map().
+# number=[10,15,20,25]
+
+# result=map(lambda n:n+10, number)
+# print(list(result))
+
+# map() + lambda se har name ko uppercase me convert karo.
+# name=["raviraj","priya"]
+# result=map(lambda n: n.upper(),name)
+# print(list(result))
+
+# map() + lambda se har name ko uppercase me convert karo.
+# number=[1,2,3,4,5,6,7,8,9,10,11]
+
+# even=filter(lambda n: n%2==0,number)
+# print(list(even))
+
+# List me se sirf positive numbers filter karo.
+# number=[-5,10,-2,7,0,-6,9,-11,12]
+# possitive=filter(lambda n: n>0,number)
+# print(list(possitive))
+
+# Sirf woh names select karo jo "A" se start hote hain.
+# name=["Amit", "Rahul", "Ankit", "Rohit", "Ajay"]
+# check=filter(lambda n: n.startswith("A"), name)
+# print(list(check))
 
 

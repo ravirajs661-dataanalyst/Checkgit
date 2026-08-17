@@ -90,6 +90,26 @@
 # result=filter(lambda n:n%5==0, number)
 # print(list(result))
 
+#              -------- Reduce Function -----------
+
+# reduce() ka use multiple values ko combine karke ek single value banane ke liye hota hai.
+
+from functools import reduce
+
+number=[1,2,3,4,5]
+
+result= reduce(lambda a,b:a+b, number)
+print(result)
+
+
+
+
+
+
+
+
+
+
 #               -------- Practic Question ----------
 # Create a lambda function that takes a number and returns its cube.
 # n=int(input("Enter a number: "))
@@ -106,6 +126,25 @@
 # print(check(n))
 
 # Use map() and lambda to add 5 to every number.
-number=[10,20,30,40]
-result=map(lambda n:n+5,number)
-print(list(result))
+# number=[10,20,30,40]
+# result=map(lambda n:n+5,number)
+# print(list(result))
+
+# Cube with lambda
+# cube=lambda n:n**3
+# print(cube(4))
+
+# num=[2,3,4,5,6]
+# cube=map(lambda n:n**3, num)
+# print(list(cube))
+
+# Upper case convert
+# name=["python","sql","excel"]
+# result=map(lambda n:n.upper(), name)
+
+# print(list(result))
+
+# filter the odd number. give number 1 to 20 find only odd number
+num=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+odd=filter(lambda n:n%2!=0,num)
+print(list(odd))
