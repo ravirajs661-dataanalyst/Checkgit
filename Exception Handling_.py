@@ -22,11 +22,29 @@
 #     print("Error",e)
 
 # User se index input lo aur list ka element print karo. Agar user invalid index de, to IndexError handle karo.
-numbers = [10, 20, 30, 40, 50]
+# numbers = [10, 20, 30, 40, 50]
+# try:
+#     n=int(input("Enter a number: "))
+#     print(numbers[n])
+# except IndexError:
+#     print("Invlid Index! , Try Again ")
+
+# User se do numbers input lo aur: Addititon, subtraction, multiplication and division 
 try:
-    n=int(input("Enter a number: "))
-    print(numbers[n])
-except IndexError:
-    print("Invlid Index! , Try Again ")
-
-
+    num1=int(input("Enter a number"))
+    num2=int(input("Enter a number"))
+    operator=input("Enter a operator (+,-,*,/)")
+    if operator=="+":
+        print("Total :" ,num1 + num2)
+    elif operator=="-":
+        print("Total :" ,num1 - num2)
+    elif operator=="*":
+        print("Total :",num1 * num2)
+    elif operator=="/":
+        print("Total :", num1 / num2)
+    else:
+        print("Invlid operator")
+except (ValueError,TypeError,ZeroDivisionError) as e:
+    print("Error", e)
+finally:
+    print("Program Complete")
