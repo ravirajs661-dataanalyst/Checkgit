@@ -435,4 +435,184 @@
 # check=filter(lambda n: n.startswith("A"), name)
 # print(list(check))
 
+# User se 5 numbers input lo aur unmein se sabse bada number find karo.
+# a=int(input("Enter a number"))
+# b=int(input("Enter a number"))
+# c=int(input("Enter a number"))
+# d=int(input("Enter a number"))
+# e=int(input("Enter a number"))
+
+# largest=a 
+# if b>largest:
+#     largest=b 
+# if c>largest:
+#     largest=c 
+# if d>largest: 
+#     largest=d 
+# if e > largest:
+#     largest=e 
+
+# print("Largest: ", largest)
+
+# User se ek number lo aur check karo ki number even hai ya odd.
+# n=int(input("Enter a number: "))
+# if n%2==0:
+#     print("Even No :", n)
+# else:
+#     print("Odd No :", n)
+
+# User se ek number lo aur while loop ka use karke uska reverse print karo.
+# num=int(input("Enter a number: "))
+# reverse=0
+# while num>0:
+#     digit=num%10
+#     reverse=reverse*10 + digit
+#     num=num //10
+# print(reverse)
+
+# User se ek number lo aur uska factorial calculate karo.
+# num=int(input("Enter a number: "))
+# total=1
+# for i in range(1,num+1):
+#     total=total*i
+# print(total)
+
+# Isme se sirf even numbers ki new list banao.
+# numbers=[10,15,20,25,30,35,40]
+# even=[]
+# for i in numbers:
+#     if i%2==0:
+#         even.append(i)
+# print(even)
+
+# Isme vowels (a, e, i, o, u) count karo.
+# text= str(input("Enter a text: "))
+# count=0
+# for i in text:
+#     if i in "aeiouAEIOU":
+#         count=count+1
+# print(count)
+
+# Duplicate values remove karke unique values print karo.
+# numbers = [10, 20, 10, 30, 20, 40, 30, 50]
+# unique=[]
+# for i in numbers:
+#     if i not in unique:
+#         unique.append(i)
+# print(unique)
+
+# num1=list(set(numbers))
+# print(num1)
+
+# Ek dictionary banao jisme 5 students ke naam aur marks ho.Sirf un students ko print karo jinke marks 60 se zyada hain.
+# student={
+#     "Raviraj": 67,
+#     "Priya": 78,
+#     "Neha": 87,
+#     "Namdni": 45,
+#     "Amit": 55
+# }
+# for name, marks in student.items():
+#     if marks>60:
+#         print(name, marks)
+
+# User se ek sentence lo aur dictionary ki help se har word kitni baar aaya hai count karo.
+# sentence=input("Enter a sentence")
+# words=sentence.split()
+# count={}
+# for i in words:
+#     if i in count:
+#         count[i]=count[i]+1
+#     else:
+#         count[i]=1
+# print(count)
+
+# List comprehension ka use karke 1 se 50 tak ke squares of even numbers ki list banao.
+# squre=(i**2 for i in range(1,51) if i%2==0 )
+# print(list(squre))
+
+# Dictionary comprehension ka use karke 1 se 10 tak numbers aur unke squares ki dictionary banao.
+# squre={n:n**2 for n in range(1,11)}
+# print(squre)
+
+# Ek function calculate(a, b, operation) banao jo operation ke according: addition, subtraction, multiplication, division 
+# a=int(input("Enter a number: "))
+# b=int(input("Enter a number:"))
+# operation=input("Enter a operation(+,-,*,/):")
+
+# def calculation(a,b,operation):
+#     if operation =="+":
+#         return(a+b)
+#     elif operation=="-":
+#         return(a-b)
+#     elif operation=="*":
+#         return(a*b)
+#     elif operation=="/":
+#         return(a/b)
+#     else:
+#         print("invalid Operator")
+# result=calculation(a,b,operation)
+
+# print("Result:", result)
+
+# Ek function banao jo *args accept kare aur diye gaye sabhi numbers ka sum aur average return kare
+# def calculation(*number):
+#     total=0
+#     for i in number:
+#         total=total+i
+#     print(total)
+#     print((total)/len(number))
+
+# calculation(12,13,24,25,16)
+
+# Ek function banao jo **kwargs accept kare aur student ki information print kare, jaise:
+# def student(**details):
+#     for key, value in details.items():
+#         print(key,":", value)
+
+# student(
+#     name="Raviraj",
+#     age=22,
+#     course="Excel, SQL, Python",
+#     marks= 71.89
+# )
+
+# lambda aur map() ka use karke list ke har number ka square nikalo:
+# number=[2,4,6,8,10,12,14]
+# squre=map(lambda n:n**2, number)
+# print(list(squre))
+
+# lambda aur filter() ka use karke list me se 50 se greater numbers find karo:
+# numbers = [25, 60, 45, 80, 30, 90, 55]
+# check=filter(lambda n: n>50, numbers)
+# print(list(check))
+
+# lambda, filter() aur map() ko combine karke list me se even numbers select karo aur unka square nikalo.
+# numbers = [25, 60, 45, 80, 30, 90, 55]
+# even_number=filter(lambda n: n%2==0, numbers)
+# squre= map(lambda n: n**2, even_number)
+# print(list(squre))
+
+# reduce() ka use karke list ke sabhi numbers ka product nikalo:
+# numbers = [2, 3, 4, 5]
+# from functools import reduce
+# result= reduce(lambda a,b: a+b, numbers)
+
+# print(result)
+
+# Ek program banao jo user se number input kare. Agar user number ke instead text enter kare to try-except se error handle karo 
+#                               aur "Please enter a valid number" print karo.
+
+# try:
+#     A=int(input("Enter a number :"))
+#     B=int(input("Enter a number :"))
+#     result=(A/B)
+# except (ValueError,TypeError, ZeroDivisionError):
+#     print("Please enter a valid number")
+# else:
+#     print("Result:", result)
+# finally:
+#     print("Proggram complete")
+
+
 
