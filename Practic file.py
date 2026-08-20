@@ -614,5 +614,194 @@
 # finally:
 #     print("Proggram complete")
 
+"""
+ Ek student-management program banao jisme:
+Student ka naam aur marks store ho
+Dictionary/list ka use ho
+Function ka use ho
+if-else se grade calculate ho
+try-except se invalid marks handle ho
+lambda + filter() se 60+ marks wale students find karo
+lambda + map() se students ke marks me 5 bonus marks add karo 
+"""
+
+"""
+students = [
+    {"name": "Rahul", "marks": 75},
+    {"name": "Aman", "marks": 45},
+    {"name": "Priya", "marks": 88},
+    {"name": "Neha", "marks": 55},
+    {"name": "Ravi", "marks": 65}
+]
+# Function to calculate grade
+def calculate_grade(marks):
+    if marks >= 80:
+        return "A"
+    elif marks >= 60:
+        return "B"
+    elif marks >= 40:
+        return "C"
+    else:
+        return "Fail"
+
+# Display students and grades
+for student in students:
+    print(student["name"], student["marks"], calculate_grade(student["marks"]))
+
+# 60+ marks wale students
+top_students = list(
+    filter(lambda student: student["marks"] >= 60, students)
+)
+
+print("\n60+ Marks Students:")
+print(top_students)
+
+# 5 bonus marks add karna
+bonus_students = list(
+    map(lambda student: {
+        "name": student["name"],
+        "marks": student["marks"] + 5
+    }, students)
+)
+
+print("\nAfter 5 Bonus Marks:")
+print(bonus_students)
+
+"""
+
+# Ek function find_even(numbers) banao jo list me se even numbers return kare.
+# numbers = [10, 15, 20, 25, 30, 35, 40]
+# find_even=filter(lambda n:n%2==0, numbers)
+# print(list(find_even))
+
+# Ek dictionary mein 5 students ke naam aur marks store karo. Function bana kar har student ka grade print karo.
+students=[
+    {"Name": "RaviRaj","Mark" : 75},
+    {"Name": "Priya","Mark" : 65},
+    {"Name": "Neha","Mark" : 87},
+    {"Name": "Nandni","Mark" : 45},
+    {"Name": "Amit","Mark" : 40}
+]
+
+# def grade(mark):
+#     if mark>=80:
+#         return "A"
+#     elif mark>=60:
+#         return "B"
+#     elif mark>=40:
+#         return "C"
+#     else:
+#         return "Fail"
+
+# for student in students:
+#     result = grade(student["Mark"])
+#     print(student["Name"], result)
+
+# lambda aur filter() ka use karke list me se 50 se greater numbers find karo.
+# numbers = [25, 60, 45, 80, 30, 90, 55]
+# check=filter(lambda n: n>50, numbers)
+# print(list(check))
+
+# lambda aur map() ka use karke list ke har number mein 10 add karo.
+# numbers = [10, 20, 30, 40, 50]
+# added=map(lambda n: n+10, numbers)
+# print(list(added))
+
+# reduce() ka use karke list ke sabhi numbers ka sum nikalo.
+# from functools import reduce
+# numbers = [5, 10, 15, 20]
+# result=reduce(lambda a,b: a+b, numbers)
+# print(result)
+
+# Is list me se sirf even numbers ki ek new list banao.
+# numbers = [12, 25, 8, 41, 30, 17, 50]
+# even_num=filter(lambda n: n%2!=0, numbers)
+# print(list(even_num))
+
+# 5 students ke naam aur marks ko store karo. Program aisa banao ki har student ka naam, marks aur grade print ho.
+# students=[
+#     {"name":"RaviRaj","mark":85},
+#     {"name":"priya","mark":75},
+#     {"name":"neha","mark":44},
+#     {"name":"amit","mark":40},
+#     {"name":"namdni","mark":55}
+# ]
+# def grade(mark):
+#     if mark>=80:
+#         return "A"
+#     elif mark>=60:
+#         return "B"
+#     elif mark>=40:
+#         return "C"
+#     else:
+#         return "Fail"
+# for student in students:
+#     result=grade(student["mark"])
+#     print(student["name"],student["mark"], result)
+
+# Is list me se 60 ya usse zyada numbers find karo aur unka square nikalo.
+# numbers = [10, 25, 40, 55, 70, 85, 100]
+# check=filter(lambda n: n>=60, numbers)
+# square=map(lambda n: n**2, check)
+# print(list(square))
+
+# User se numbers aur operation input lena hai aur final result print karna hai.
+# A=int(input("Enter a number :"))
+# B=int(input("Enter a number :"))
+# operation=input("Enter a operator (+,-,*,/): ")
+
+# def calculation(A,B,operation):
+#     if operation =="+":
+#         return A+B
+#     elif operation =="-":
+#         return A-B
+#     elif operation =="*":
+#         return A*B
+#     elif operation =="/":
+#         return A/B
+#     else:
+#         return "Invalid operator"
+# result=calculation(A,B,operation)
+# print("Result :", result)
+
+"""
+Ek student-management program banao jisme:
+5 students ka naam aur marks store karo.
+Har student ka grade print karo.
+60 ya usse zyada marks wale students alag print karo.
+Sabhi students ke marks mein 5 bonus marks add karo.
+Agar user invalid marks enter kare, to program crash nahi hona chahiye.
+
+students = [
+    {"name": "Rahul", "marks": 75},
+    {"name": "Aman", "marks": 45},
+    {"name": "Priya", "marks": 88},
+    {"name": "Neha", "marks": 55},
+    {"name": "Ravi", "marks": 65}
+]
+
+def calculate_grade(marks):
+    if marks >= 80:
+        return "A"
+    elif marks >= 60:
+        return "B"
+    elif marks >= 40:
+        return "C"
+    else:
+        return "Fail"
+
+for student in students:
+    print(student["name"], student["marks"], calculate_grade(student["marks"]))
+
+top_student= list(filter(lambda student: student["marks"]>=60, students)) #---60+ wale studetnt
+
+bonus_students=list(map(lambda student:{                    # ------5 bonus point add har student ko 
+    "name": student["name"],
+     "marks": student["marks"] +5
+     },students))
+
+print(top_student)
+print(bonus_students)
+"""
 
 
