@@ -803,5 +803,51 @@ bonus_students=list(map(lambda student:{                    # ------5 bonus poin
 print(top_student)
 print(bonus_students)
 """
+# Loop ka use karke sirf even numbers print karo.
+# numbers = [10, 15, 20, 25, 30, 35, 40]
+# even=[]
+# for i in numbers:
+#     if i%2==0:
+#         even.append(i)
+# print(even)
+
+# even=filter(lambda n: n%2==0,numbers)  #2nd method
+# print(list(even))
 
 
+# Loop ka use karke un students ke naam print karo jinke marks 50 ya usse zyada hain.
+# students = {
+#     "Amit": 75,
+#     "Rahul": 45,
+#     "Neha": 82,
+#     "Pooja": 38,
+#     "Anjali": 91
+# }
+
+# for name,mark in students.items():
+#     if mark>50:
+#         print(name,mark)
+
+# Ek function calculate_sum() banao jo *args accept kare aur diye gaye saare numbers ka sum return kare.
+# def calculate_sum(*number):
+#     total=0
+#     for i in number:
+#         total=total+i
+#     print(total)
+
+# calculate_sum(10, 20, 30, 40)
+
+# lambda aur filter() ka use karke 20 se bade numbers nikalo.
+# numbers = [5, 12, 18, 21, 30, 35, 40, 7]
+# check=filter(lambda n: n>20, numbers)
+# print(list(check))
+
+# try:
+#     a=int(input("Enter a number: "))
+#     b=int(input("Enter a number: "))
+#     divide=a/b
+# except (ZeroDivisionError,ValueError):
+#     print("can not divide by zero")
+# else:
+#     print("result", divide)
+    
