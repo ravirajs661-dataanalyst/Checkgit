@@ -195,3 +195,47 @@
 # text=input("enter a string :")
 # print(text[::-1])
 
+# 1.Even numbers print karo. 2.Odd numbers print karo. 3.Even numbers ka total nikalo
+# numbers = [12, 5, 8, 21, 30, 7, 16]
+
+# for i in numbers:
+#     if i%2==0:
+#         print("Even number :", i)
+
+# for i in numbers:
+#     if i%2!=0:
+#         print("Odd number :", i)
+
+# total=0
+# for i in numbers:
+#     if i%2==0:
+#         total=total+i
+# print("Total :", total)
+
+
+# Students ki dictionary banao: Loop se har student ka result print karo: Marks >= 40 → "Pass", Marks < 40 → "Fail"
+# students = {
+#     "Rahul": 75,
+#     "Amit": 35,
+#     "Neha": 82,
+#     "Ravi": 45,
+#     "Priya": 28
+# }
+
+# for name, mark in students.items():
+#     if mark>=40:
+#         print(name, "Pass")
+#     else:
+#         print( name, "Fail")
+
+# 1 se 50 tak ke numbers me se sirf woh numbers ek new list me store karo jo: 3 se divisible hain ,aur even hain.
+# number=[]
+# for i in range(1,51):
+#     if i%2==0 and i%3==0:
+#         number.append(i)
+
+# print(number)
+
+# 
+
+
