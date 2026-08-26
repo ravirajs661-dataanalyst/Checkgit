@@ -1,4 +1,3 @@
-"""
 import random
 
 subjects=[
@@ -33,10 +32,15 @@ places_or_things=[
 
 while True:
     subject=random.choice(subjects)
-    action=random.choice(action)
+    action=random.choice(actions)
     places_or_thing=random.choice(places_or_things)
 
-    headlines= f"BREAKING NEWS:{subject}{action}{places_or_thing}"
+    headlines= f"BREAKING NEWS : {subject} {action} {places_or_thing}"
     print("\n"+headlines)
 
-"""
+    user_input=input("\nDo you another headline? (yes/no)").strip().lower()
+    if user_input == "no":
+        break
+    print("\nThanks for using fake news headlines generator. Have a fun day")
+
+

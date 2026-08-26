@@ -236,6 +236,49 @@
 
 # print(number)
 
-# 
+# Union, Intersection, Difference, symmetric Difference Find here!
+# a = {1, 2, 3, 4, 5}
+# b = {4, 5, 6, 7, 8}
 
+# print(a|b) # Union
+# print(a&b) #Intersecction
+# print(a-b) #difference
+# print(a^b) #Symmetirc
+
+# Ek function calculate_sum() banao jo *args accept kare.
+# def calculate_sum(*number):
+#     total=0
+#     for i in number:
+#         total=total+i 
+#     print(total)
+
+# calculate_sum(10, 20, 30, 40)
+
+# Map + Lmabda, Filter + Lambda Function --------
+# numbers = [2, 5, 8, 11, 14, 17, 20]
+# squre=map(lambda n: n**2, numbers)
+# even_number=filter(lambda n: n%2==0, numbers)
+
+# print(list(squre))
+# print(list(even_number))
+
+# Exception Handling. User se do numbers input lo aur division karo. Program me handle karo:
+# try:
+#     a=int(input("Enter first number: "))
+#     b=int(input("Enter second number :"))
+#     result=a/b
+# except ValueError:
+#     print("Please enter a valid number!")
+# except ZeroDivisionError:
+#     print("Can not divide by Zero!")
+# else:
+#     print("Result :", result)
+# finally:
+#     print("program finished")
+
+file= open("student.txt","r")
+names=file.readlines()
+for name in names:
+    print(name.strip())
+file.close()
 
