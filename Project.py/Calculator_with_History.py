@@ -2,28 +2,28 @@
 History_file="history.txt"
 
 def show_history():
-    file=open ("History.file","r")
+    file=open (History_file,"r")
     Lines=file.readlines()
     if len(Lines) ==0:
-        print("No HIstory Found!")
+        print("No History Found!")
     else:
         for line in reversed(Lines):
             print(line)
     file.close()
 
 def clear_history():
-    file=open("History_file","w")
+    file=open(History_file,"w")
     file.close()
-    print("HIstory Cleared!")
+    print("History Cleared!")
 
 def save_to_history(equcation, result):
-    file=open("HIstory_file","a")
+    file=open(History_file,"a")
     file.write(equcation + "=" + str(result) + "\n")
     file.close()
 
-def calcultor(user_input):
-    parts=user_input.split()
-    if len(parts) != 0:
+def calculte(user_input):
+    parts = user_input.split()
+    if len(parts) != 3:
         print("Invalid input! Use Formate. Number Operator Number. e.g.(8+8)")
         return
 
@@ -52,6 +52,21 @@ def calcultor(user_input):
     save_to_history(user_input, result)
 
 def main():
-    print("___SIMPLE CALCULATOR (Type History, clear, exit)")
+    print("___SIMPLE CALCULATOR (Type history, clear, exit)")
+    while True:
+        user_input = input("Enter Calculation (+ - * /) or command (history, exit, clear) = ")
+        if user_input == "exit":
+            print("Good By !")
+            break
+        elif user_input == "history":
+            show_history()
+        elif user_input == "clear":
+            clear_history()
+        else:
+            calculte(user_input)
+
+main()
+
+
 
     

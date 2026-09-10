@@ -49,20 +49,62 @@ car1 aur car2 → 2 objects of Car class
 # areas=Rectangle(15,7)
 # areas.area()
 
-class Bank_account:
-    def __init__(self, account_holder, balance):
-        self.account_holder= account_holder
-        self.balance= balance
+# class Bank_account:
+#     def __init__(self, account_holder, balance):
+#         self.account_holder= account_holder
+#         self.balance= balance
 
+#     def deposite(self, amount):
+#         self.balance=self.balance+amount
+
+#     def show_balance(self):
+#         print("current_balance", self.balance)
+
+# account1=Bank_account("Ravi", 5000)
+
+# account1.show_balance()
+# account1.deposite(2000)
+# account1.show_balance()
+
+
+# ------ Bank account manage: Deposite, Withdraw ------ Normal Function
+"""def deposite(balance, amount):
+    return balance + amount
+
+def withdraw(balance, amount):
+    if amount > balance:
+        print("insufficent balance")
+        return balance
+    return balance - amount
+
+balance = 0
+balance = deposite(balance, 1000)
+print(balance)
+balance = withdraw(balance, 400)
+print(balance)
+"""
+
+#  ------ Bank account manage: Deposite, Withdraw ------ OOP Method
+class Account:
+    def __init__(self, balance):
+        self.balance = balance
     def deposite(self, amount):
-        self.balance=self.balance+amount
+        self.balance=self.balance + amount
+        print(f"{amount} is deposite! \nNew balance is {self.balance}")
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficent balance!")
+        else:
+            self.balance = self.balance - amount
+            print(self.balance)
 
-    def show_balance(self):
-        print("current_balance", self.balance)
+# Ravi=Account(5000)
+# Ravi.deposite(1000)
+# Ravi.withdraw(2000)
 
-account1=Bank_account("Ravi", 5000)
+Priya=Account(2000)
+Priya.deposite(500)
+Priya.withdraw(900)
 
-account1.show_balance()
-account1.deposite(2000)
-account1.show_balance()
+
 
