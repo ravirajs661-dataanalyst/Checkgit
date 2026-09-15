@@ -55,7 +55,7 @@ print(arr[::2])  # har 2nd elements
 print(arr[::-1]) # reverse elements print
 """
 
-"""
+"""f
 #2D Indexing
 arr=np.array([[10,20,30],
               [40,50,60],
@@ -71,4 +71,46 @@ print(arr[1])
 #3rd column print karo
 print(arr[:,2])
 """
+
+"""
+arr = np.array([5, 10, 15, 20, 25, 30, 35, 40])
+# Index 2, 4 aur 6 ke elements print karo.
+print(arr[2::2])
+
+# Last 4 elements ko negative indexing/slicing ka use karke print karo.
+arr = np.array([10, 20, 30, 40, 50, 60, 70])
+print(arr[-4:])
+
+# Index 0, 2, 4, 6 ke elements print karo.
+arr = np.array([10, 20, 30, 40, 50, 60, 70, 80])
+print(arr[::2])
+
+# array se index 1, 3, 5, 7 ke elements print karo.
+arr = np.array([10, 20, 30, 40, 50, 60, 70, 80])
+print(arr[1::2])
+
+# Array ke last 5 elements ko reverse order me print karo.
+arr = np.array([10, 20, 30, 40, 50, 60, 70, 80])
+print(arr[:-6:-1])
+"""
+
+# ----------- 2D Array------------
+arr = np.array([
+    [10, 20, 30, 40],
+    [50, 60, 70, 80],
+    [90, 100, 110, 120]
+])
+
+# 100 ko indexing se access karo.
+print(arr[2,2])
+
+# First 2 rows kaise nikaalenge?
+print(arr[:2])
+print(arr[:2,2])
+print(arr[:2,3])
+print(arr[:3,3])
+
+
+
+
 
