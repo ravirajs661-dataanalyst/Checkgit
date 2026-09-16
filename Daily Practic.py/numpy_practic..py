@@ -102,14 +102,17 @@ arr = np.array([
 ])
 
 # 100 ko indexing se access karo.
-print(arr[2,2])
-
+# print(arr[2,2])
+"""
 # First 2 rows kaise nikaalenge?
 print(arr[:2])
 print(arr[:2,2])
 print(arr[:2,3])
 print(arr[:3,3])
+"""
 
+# First 2 Cloumn print kare:
+print(arr[:,1])
 
 
 
