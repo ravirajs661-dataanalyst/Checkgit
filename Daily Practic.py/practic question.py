@@ -374,5 +374,210 @@ marks = {
     "SQL": 88
 }
 
+"""
+# Create a dictionary containing 5 students and their marks. Print only students who scored 70 or more.
+students={
+    "Ravi": 85,
+    "Priya": 70,
+    "Neha": 55,
+    "Nandni": 45,
+    "Amit": 60
+}
+
+for name, marks in students.items():
+    if marks > 50:
+        print(name, marks)
+
+"""
+# Take a number from the user and check whether it is positive, negative, or zero.
+# num=int(input("Enter a number: "))
+# if num > 0:
+#     print("Possitive number")
+# elif num < 0:
+#     print("Negative Number")
+# else:
+#     print("Zero")
+
+# Take a number and print whether it is even or odd.
+# num=int(input("Enter a number: "))
+# if num % 2==0:
+#     print("Even Numbr")
+# else:
+#     print("Odd Number")
+
+# Take 3 numbers and print the largest number without using max().
+# num=[50,38,67,28,49,19]
+# largest=0
+# for i in num:
+#     if i > largest:
+#         largest=i
+
+# print(largest)
+
+# Print the numbers from 1 to 50 using a for loop.
+# for i in range(1,51):
+#     print(i)
+
+# Print all even numbers between 1 and 100.
+# for i in range(1,101):
+#     if i % 2 == 0:
+#         print(i)
+
+# Calculate the sum of numbers from 1 to 100.
+# total=0
+# for i in range(1,101):
+#     total= total+i
+# print(total)
+
+# Take a number from the user and print its multiplication table.
+# n = int(input("Enter a number"))
+# for i in range(1,11):
+#     print(n*i)
+
+# Take a number and calculate its factorial.
+# n = int(input("Enter a number"))
+# total=1
+# for i in range (1, n+1):
+#     total=total*i
+
+# print(total)
+
+# Check whether a number is prime or not.
+# n = int(input("Enter a number"))
+# count=0
+# while True:
+#     for i in range(1,n+1):
+#         if n % i ==0:
+#             count=count+ 1
+
+#     if count == 2:
+#         print("Prime Number")
+#         break
+#     else:
+#         print("Not Prime")
+#     break
+
+# Print all prime numbers between 1 and 100.
+# for n in range(2,101):
+#     count=0
+#     for i in range(1, n+1):
+#         if n % i== 0:
+#             count= count+1
+
+#     if count == 2:
+#         print(n)
+
+# # Reverse a number without converting it into a string.
+# number = int(input("Enter a number"))
+# reverse=0
+# while number > 0:
+#     digit = number%10
+#     reverse= reverse*10+ digit
+#     number= number//10
+
+# print(reverse)
+
+# Count how many digits are present in a number.
+# number = 5788584
+# count=0
+# while number > 0:
+#     number=number//10
+#     count=count+1
+
+# print(count)
+
+# Create a list of 10 numbers and find: maxmum, minimum, sum, avg
+# number=[23,45,67,89,34,23,15,75,58,36]
+# max=number[0]
+# min=number[0]
+# sum=0
+
+# for i in number:
+#     if i > max:
+#         max=i
+# print(max)
+
+# for i in number:
+#     if i < min:
+#         min=i
+# print(min)
+
+# for i in number:
+#     sum = sum + i
+# print(sum)
+# avg=(sum/len(number))
+# print(avg)
+
+# Remove duplicate values from this list without using set().
+# numbers = [10, 20, 10, 30, 20, 40, 30]
+# unique=[0]
+
+# for i in numbers:
+#     if i not in unique:
+#         unique.append(i)
+# print(unique)
+
+# Find the second-largest number in a list.
+# numbers = [10, 20, 10, 30, 20, 40, 30]
+# largest =numbers[0]
+# second_largest=numbers[0]
+# for i in numbers:
+#     if i > largest:
+#         largest = i
+#     elif i > second_largest and second_largest != largest:
+#         second_largest = i
+# print(second_largest)
+
+# Count how many times each element occurs in a list.
+# numbers = [10, 20, 10, 30, 20, 40, 30]
+# count=[]
+# for i in numbers:
+#     total=0
+#     for j in numbers:
+#         if i == j:
+#            total=total + 1
+#     count.append(total)
+# print(count)    
+    
+# Create a function is_prime(n) that returns True if the number is prime, otherwise False.
+# def is_prime(number):
+#     count=0
+#     for i in range (1, number + 1):
+#         if number % i == 0:
+#             count= count + 1
+
+#     if count == 2:
+#         return True
+#     else:
+#        return False
+
+# print(is_prime(11))
+# print(is_prime(18))
+
+# Create a function that accepts a list and returns the largest and smallest values.
+def find_value(number):
+    largest=number[0]
+    smallest=number[0]
+
+    for i in number:
+        if i > largest:
+            largest = i
+
+        if i < smallest:
+            smallest = i
+
+    return largest, smallest
+
+
+number = [45, 33, 57, 63, 39, 29, 40, 98]
+largest, smallest = find_value(number)
+print(largest)
+print(smallest)
+    
+
+
+
+
+
 
 
