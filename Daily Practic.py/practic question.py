@@ -555,24 +555,147 @@ for name, marks in students.items():
 # print(is_prime(18))
 
 # Create a function that accepts a list and returns the largest and smallest values.
-def find_value(number):
-    largest=number[0]
-    smallest=number[0]
+# def find_value(number):
+#     largest=number[0]
+#     smallest=number[0]
 
-    for i in number:
-        if i > largest:
-            largest = i
+#     for i in number:
+#         if i > largest:
+#             largest = i
 
-        if i < smallest:
-            smallest = i
+#         if i < smallest:
+#             smallest = i
 
-    return largest, smallest
+#     return largest, smallest
 
 
-number = [45, 33, 57, 63, 39, 29, 40, 98]
-largest, smallest = find_value(number)
-print(largest)
-print(smallest)
+# number = [45, 33, 57, 63, 39, 29, 40, 98]
+# largest, smallest = find_value(number)
+# print(largest)
+# print(smallest)
+
+# Create a function that accepts a string and returns the number of vowels.
+# def vowel( word ):
+#     count=0
+
+#     for i in word:
+#         if i in "aeiouAEIOU":
+#             count=count+1
+#     return(count)
+
+# print(vowel("python programming"))
+
+# Create a function using *args that returns the sum of all numbers.
+# def add(*args):
+#     total=0
+#     for number in args:
+#         total=total + number
+#     print(total)
+
+# add(10,20,30,40)
+
+# Create a function using **kwargs that prints student information.
+# def student(**details):
+#     for key, value in details.items():
+#         print(key, ":", value)
+
+# student(name ="Ravi", age=23, course="python, sql excel")
+
+# def company(**details):
+#     for key, value in details.items():
+#         print(key, ":", value)
+
+# company(name ="Ravi raj", dept="sales", salary=35000)
+
+"""
+# Using lambda, calculate the square of every number in:
+numbers = [1, 2, 3, 4, 5]
+squre=map(lambda n: n**2, numbers)
+print(list(squre))
+
+# Using filter(), extract numbers greater than 50
+numbers = [10, 55, 23, 78, 90, 45, 61]
+check=filter(lambda n: n>10, numbers)
+print(list(check))
+
+# Using map(), convert: into their cubes.
+numbers = [2, 4, 6, 8, 10]
+cubes=map(lambda n: n**3, numbers)
+print(list(cubes))
+
+# Using reduce(), calculate the product of:
+from functools import reduce
+numbers=[1, 2, 3, 4, 5]
+result= reduce(lambda a,b: a+b, numbers)
+print(result)
+"""
+
+"""
+# Create a BankAccount class with: account holder, balance
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name=name
+        self.balance=balance
+
+    def deposite(self, amount):
+        self.balance = self.balance+ amount
+        print("Deposited :", amount)
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance = self.balance - amount
+            print("withdraw :", amount)
+        else:
+            print("Insufficent Balance!")
+
+    def show_balance(self):
+        print("Account Holder: ", self.name)
+        print("Balance: ", self.balance)
+
+account1=BankAccount("Ravi Raj", 50000)
+account1.deposite(3000)
+account1.withdraw(1000)
+account1.show_balance()
+"""
+"""
+# Create a Student class with: Create a method that calculates the percentage and displays whether the student Pass/Fail.
+class students:
+    def __init__(self, name, rool_no, mark):
+        self.name=name
+        self.rool_no=rool_no
+        self.mark=mark
+
+    def result(self):
+        total=sum(self.mark)
+        percentage=total / 5
+
+        print("Name: ", self.name)
+        print("Rool No: ", self.rool_no)
+        print("Mark: ", self.mark)
+
+        if percentage >= 40:
+            print("Result: Pass")
+        else:
+            print("Result: Fail")
+
+student1= students("Ravi Raj", 101, [70,30,50,60,85])
+student1.result()
+"""
+"""
+class employeee:
+    def __init__(self, name, salary, dept):
+        self.name=name
+        self.salary= salary
+        self.dept= dept
+
+    def __str__(self):
+        return f"Name: {self.name}, \nSalary: {self.salary}, \nDepartment: {self.dept}"
+
+emp1=employeee("Ravi Raj", 35000, "Sales")
+print(emp1)
+"""
+
+
     
 
 
