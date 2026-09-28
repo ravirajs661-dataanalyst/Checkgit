@@ -695,12 +695,188 @@ emp1=employeee("Ravi Raj", 35000, "Sales")
 print(emp1)
 """
 
+# def greet():
+#     print("Hello Ravi")
 
-    
+# greet()
+# greet()
 
+# Create a function add(a, b) that returns the sum of two numbers.
+# def add(a,b):
+#     print(a+b)
 
+# add(10,15)
 
+# Create a function student_info(name, age, course) that prints all student details.
+# def student_info(name, age, course):
+#     print("Name: ", name)
+#     print("Age: ", age)
+#     print("Course :", course)
 
+# student_info("Ravi Raj", 23,"Python, sql, excel")
 
+# Create a function that accepts two numbers and returns:
+# def return_value(num1, num2):
+#     print("Sum: ", num1 + num2)
+#     print("Difference : ", num1 - num2)
+#     print("Multiplication :", num1 * num2)
+#     print("Division : ", num1 / num2)
 
+# return_value(15, 5)
 
+# Create function : return total salary
+# def calculate_salary(salary, bonus=5000):
+#     total_salary=salary + bonus
+#     return total_salary
+
+# print(calculate_salary(30000))
+# print(calculate_salary(35000,10000))
+
+# Create check_number(n) that returns: even and odd
+# def check_number(n):
+#     if n % 2 ==0:
+#         return ('even:', n)
+#     else:
+#         return ('odd:', n)
+
+# print(check_number(5))
+
+# create: It should return True or False.
+# def is_prime(number):
+#     count=0
+#     for i in range(1, number+1):
+#         if number % i == 0:
+#             count=count + 1
+
+#     if count == 2:
+#         return True
+#     else:
+#         return False
+
+# print(is_prime(5))
+# Create a function that accepts a list and returns: maximum, minimum, sum,avg
+# def list_value(number):
+#     maximum=number[0]
+#     minimum=number[0]
+#     total=0
+
+#     for i in number:
+#         if i > maximum:
+#             maximum=i
+
+#         if i<minimum:
+#             minimum=i
+
+#         total=total+i
+
+#     avg=total/len(number)
+
+#     return maximum,minimum,total,avg
+
+# number=[10,20,30,40,50,60,70]
+
+# maximum,minimum,total,avg=list_value(number)
+
+# print(maximum)
+# print(minimum)
+# print(total)
+# print(avg)
+
+# Sum Using *args
+# def total(*args):
+#     total=0
+#     for i in args:
+#         total=total+i
+#     return total
+
+# print(total(10,20,30,40))
+
+# Create a function using *args that finds the largest number.
+# def max_value(*number):
+#     largest=0
+#     for i in number:
+#         if i > largest:
+#             largest=i
+#     return largest
+
+# print(max_value(50,49,70,20,59,99))
+
+# Create a function using *args that tells how many arguments were passed.
+# def count_value(*number):
+#     count=0
+#     for i in number:
+#         count=count+1
+#     return count
+
+# print(count_value(30,4,5,6,7,8))
+
+# Create a function that accepts any number of numbers and calculates their average.
+# def avg_value(*number):
+#     total=0
+#     for i in number:
+#         total=total+i
+#     return total/len(number)
+
+# print(avg_value(2,3,4,5,6,7))
+
+# crate def students(**kwargs) Print all information.
+# def students(**details):
+#     for key, value in details.items():
+#         print(key ,":", value)
+
+# students(
+#     name='Ravi Raj',
+#     age=23,
+#     course="SQL, Python, Excel",
+#     city="Patna"
+# )
+
+# It should accept any employee information and print it.
+# def employees(**details):
+#     for key, value in details.items():
+#         print(key,":", value)
+
+# employees(
+#     name="Ravi raj",
+#     department="Sales",
+#     salary="45000"
+# )
+
+# Create a function that tells how many keyword arguments were passed.
+# def count_lenght(**details):
+#     print(len(details))
+
+# count_lenght(
+#     name="Ravi raj",
+#     age=23,
+#     course="sql, python",
+#     city="patna"
+# )
+
+# Create a function using **kwargs that searches for the salary value.
+# def count_lenght(**details):
+#     if "salary" in details:
+#         print("Salary:", details["salary"])
+#     else:
+#         print("salary not found!")
+
+# count_lenght(
+#     name="Ravi raj",
+#     age=23,
+#     course="sql, python",
+#     city="patna",
+#     salary=45000
+# )
+  
+# create: Print the positional and keyword arguments separately.
+def information(*marks, **details):
+    print("Marks: ", marks)
+    print("Details: ", details)
+
+information(
+    65,55,87,75,
+    name="Ravi Raj",
+    Class="Bs.c",
+    Age= 23,
+    Course="Computer Science"
+)
