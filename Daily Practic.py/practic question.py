@@ -869,14 +869,16 @@ print(emp1)
 # )
   
 # create: Print the positional and keyword arguments separately.
-def information(*marks, **details):
-    print("Marks: ", marks)
-    print("Details: ", details)
+# def information(*marks, **details):
+#     print("Marks: ", marks)
+#     print("Details: ", details)
 
-information(
-    65,55,87,75,
-    name="Ravi Raj",
-    Class="Bs.c",
-    Age= 23,
-    Course="Computer Science"
-)
+# information(
+#     65,55,87,75,
+#     name="Ravi Raj",
+#     Class="Bs.c",
+#     Age= 23,
+#     Course="Computer Science"
+# )
+
+
